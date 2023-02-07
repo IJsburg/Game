@@ -12,7 +12,7 @@ var gevaarSnelheid = 50;
 var score = 0;
 
 function setup() {
-  createCanvas(650, 650).parent('game');
+  createCanvas(650, 650).parent('prototype');
   frameRate(60);
 }
 
