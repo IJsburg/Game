@@ -10,11 +10,6 @@ var gevaarY = 0;
 var gevaarSnelheid = 50;
 
 var score = 0;
-if (localStorage.highscore) {
-  var highscore = Number(localStorage.getItem('highscore'));
-} else {
-  var highscore = 0
-}
 
 function setup() {
   createCanvas(650, 650).parent('game');
@@ -83,7 +78,6 @@ function draw() {
   textAlign(CENTER, CENTER);
   textSize(50);
   text('Klik om te starten', 300, 300);
-  textSize(50);
-  text('highscore: '+ highscore, 300, 450);
+
 }
 }
